@@ -1,0 +1,11 @@
+{
+  "name": "@directories/data",
+  "version": "1.0.0",
+  "description": "Startup perks data package",
+  "main": "src/index.ts",
+  "exports": {
+    "./perks": "./src/perks/index.ts",
+    "./popular": "./src/popular/index.ts"
+  },
+  "dependencies": {}
+}
