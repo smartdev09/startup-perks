@@ -3,6 +3,7 @@ import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import { ThemeProvider } from "next-themes";
 import { NuqsAdapter } from "nuqs/adapters/next/app";
+import { Analytics } from "@vercel/analytics/next";
 import { cn } from "@/lib/utils";
 import "./globals.css";
 
@@ -95,6 +96,7 @@ export default function RootLayout({
 						{children}
 					</ThemeProvider>
 				</NuqsAdapter>
+				<Analytics />
 			</body>
 		</html>
 	);
